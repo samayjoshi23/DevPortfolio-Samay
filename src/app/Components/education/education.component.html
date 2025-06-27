@@ -1,0 +1,62 @@
+<section class="p-3">
+    
+    <!-- Experience -->
+    <div class="mb-4">
+        <div class="mb-4">
+            <p class="text-center">Experience</p>
+            <h1 class="text-center">12+ Years of passion for <br>Programming techiques</h1>        
+        </div>
+        <div class="row mt-4">
+            <!-- left section -->
+            <div class="company-list col-12 col-lg-6 col-md-4 col-sm-12">
+                <ng-container *ngFor="let company of companyList">
+                    <div class="company-card d-flex content-card mb-3" [class.active]="company.id == slectedCompanyData.id" (click)="onSelectCompany(company.id)">
+                        <div class="company-icon">
+                            <img [src]="company.logo" [alt]="company.name">
+                        </div>
+                        <div class="d-flex flex-column ms-3">
+                            <h4>{{company.name}}</h4>
+                            <p class="text-accent-secondary">{{company.duration}}</p>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+    
+            <!-- right section -->
+            <div class="company-exp col-12 col-lg-6 col-md-4 col-sm-12 ps-xl-5 ps-3">
+                <div class=" d-flex flex-column">
+                    <h4 class="company-position mb-3 text-accent-primary">{{slectedCompanyData.position}}</h4>
+                    <ul class="mb-3 ms-4">
+                        <li *ngFor="let bullet of keyBullets" class="mb-2">{{bullet}}</li>
+                    </ul>
+                    <div class="d-flex">
+                        <div class="tag me-2" *ngFor="let tag of tags">{{tag}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education -->
+    <div class="mb-4 content-card">
+        <p class="mb-4 text-center">Education</p>
+        <div class="d-flex justify-content-center">
+            <div class="education-container d-flex flex-column">
+                <ng-container *ngFor="let ed of educationList">
+                    <div class="education d-flex flex-column">
+                        <p class="education-header">
+                            <span class="text-accent-secondary">{{ed.duration}}</span>: 
+                            <span class="text-accent-primary fw-bold">{{ed.course}}</span>
+                        </p>
+                        <div class="row education-description-wrapper pt-2 pb-5">
+                            <div class="dot"></div>
+                            <div class="col-3"></div>
+                            <div class="col-8">{{ed.description}}</div>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+
+</section>

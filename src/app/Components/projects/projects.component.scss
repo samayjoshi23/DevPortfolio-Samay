@@ -1,0 +1,39 @@
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    
+    .project-header{
+        display: flex;
+        flex-direction: column;
+
+        .thumb {
+            aspect-ratio: 2/1;
+            border: 1px solid red;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+    
+        .title {
+            font-size: 20px;
+        }
+    
+        .description {
+            text-overflow: ellipsis;
+        }
+
+        .stack-tag{
+            border: 2px solid lightgrey;
+            font-size: 11px;
+            padding: 0.25rem;
+            border-radius: 4px;
+        }
+    }
+
+    .button {
+        font-size: 14px;
+        border-radius: 6px;
+        padding: 0.25rem 0.5rem;
+    }
+}

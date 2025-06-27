@@ -1,0 +1,46 @@
+<section>
+    <p class="mb-3 text-center">Projects</p>
+    
+    <div>
+        <h1 class="text-center">Skills</h1>
+        <div class="row align-items-start">
+            <div class="col-lg-6 col-md-4 col-sm-12 col-12">
+                <div class="content-card">
+                    Logo images starting from here...
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-8 col-sm-12 col-12">
+                <div class="content-card">
+                    <ng-container *ngFor="let skill of skillsList">
+                        <p><span class="text-accent-primary fw-bold">{{skill.title}}:</span> {{skill.description}}</p>
+                    </ng-container>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1 class="text-center">Projects</h1>
+        <div class="row my-3">
+            <ng-container *ngFor="let project of projects">
+                <div class="col-6 col-lg-3 col-md-4 col-sm-6">
+                    <div class="content-card project p-2">
+                        <div class="project-header mb-2">
+                            <div class="thumb mb-2">
+                                <img [src]="" [alt]="'img'">
+                            </div>
+                            <h4 class="title mb-2">{{project.title}}</h4>
+                            <p class="description mb-2 text-accent-secondary">{{project.description}}</p>
+                            <div class="d-flex flex-wrap gap-1">
+                                <div class="stack-tag" *ngFor="let tag of project.stack">{{tag}}</div>
+                            </div>
+                        </div>
+                        <div class="d-flex border-top pt-2">
+                            <button class="button">Preview</button>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</section>
