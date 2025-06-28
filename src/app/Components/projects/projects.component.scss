@@ -10,13 +10,17 @@
 
     .thumb {
       aspect-ratio: 2/1;
-      border: 1px solid red;
       border-radius: 6px;
       overflow: hidden;
+
+      img {
+        width: 100%;
+      }
     }
 
     .title {
       font-size: 20px;
+
     }
 
     .description {

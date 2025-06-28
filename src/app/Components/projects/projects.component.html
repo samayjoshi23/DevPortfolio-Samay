@@ -30,14 +30,14 @@
 
     <div>
         <p class="mb-3 text-center section-name">Projects</p>
-        <h2 class="text-center mb-5">Some of my projects</h2>
+        <h2 class="text-center mb-5">Some of my recent projects</h2>
         <div class="row my-3">
             <ng-container *ngFor="let project of projects">
                 <div class="col-6 col-lg-3 col-md-6 col-sm-6 p-1">
                     <div class="content-card project p-2">
                         <div class="project-header mb-2">
                             <div class="thumb mb-2">
-                                <img [src]="" [alt]="'img'">
+                                <img [src]="project.thumb" [alt]="'img'">
                             </div>
                             <h4 class="title mb-2">{{project.title}}</h4>
                             <p class="description mb-2 text-accent-secondary">{{project.description}}</p>
@@ -46,7 +46,7 @@
                             </div>
                         </div>
                         <div class="d-flex pt-2">
-                            <button class="preview-btn">Preview</button>
+                            <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#CarousalContainer" (click)="previewProject(project.id)">Preview</button>
                         </div>
                     </div>
                 </div>
@@ -54,3 +54,20 @@
         </div>
     </div>
 </section>
+
+<!-- CAROUSAL POPUP -->
+<div class="modal fade" id="CarousalContainer" tabindex="-1" aria-labelledby="CarousalContainerLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="CarousalContainerLabel">{{selectedProject?.title}} Gallery</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" #closebutton></button>
+        </div>
+        <div class="modal-body">
+            <div class="h-100 w-100 d-flex justify-content-center">
+                <app-carousal [Images]="selectedProject?.images ?? []" [ProjectName]="!selectedProject?.title ? null : selectedProject?.title"></app-carousal>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
