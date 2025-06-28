@@ -1,8 +1,8 @@
 .tag {
-    border: 2px solid rgb(219, 219, 219);
-    font-size: 14px;
+    border: 2px solid var(--border-color);
+    font-size: 13px;
     border-radius: 4px;
-    padding: 0.4rem 0.8rem;
+    padding: 0.3rem 0.5rem;
 }
 
 .company-card {
@@ -11,7 +11,7 @@
 
 .company-card.active {
     border-width: 3px;
-    border-color: grey;
+    border-color: var(--primary-color);
 }
 
 .education-description-wrapper {
@@ -23,9 +23,19 @@
     padding: 0;
     position: absolute;
     left: -5px;
-    top: -16px;
+    top: -17px;
     width: 10px;
     height: 10px;
     background-color: rgb(146, 146, 146);
     border-radius: 50%;
+}
+
+.company-icon {
+    border-radius: 5px;
+    overflow: hidden;
+
+    img {
+        width: 3rem;
+        aspect-ratio: 1/1;
+    }
 }

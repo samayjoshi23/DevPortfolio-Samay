@@ -1,18 +1,27 @@
 <section>
-    <p class="mb-3 text-center">Projects</p>
-    
-    <div>
-        <h1 class="text-center">Skills</h1>
-        <div class="row align-items-start">
-            <div class="col-lg-6 col-md-4 col-sm-12 col-12">
-                <div class="content-card">
-                    Logo images starting from here...
+    <div class="my-4">
+        <p class="mb-3 text-center section-name">Skills</p>
+        <div class="row">
+            <div class="col-12">
+                <div class="content-card skill-img-container mb-2">
+                    <img class="skill-img" src="./../../../assets/Logos/angular.png" alt="angular">
+                    <img class="skill-img" src="./../../../assets/Logos/azure.png" alt="angular">
+                    <img class="skill-img" src="./../../../assets/Logos/dot-net.png" alt="angular">
+                    <img class="skill-img" src="./../../../assets/Logos/c-sharp.png" alt="angular">
+                    <img class="skill-img" src="./../../../assets/Logos/gcp.png" alt="angular">
+                    <img class="skill-img" src="./../../../assets/Logos/js.png" alt="angular">
+                    <img class="skill-img" src="./../../../assets/Logos/sql.png" alt="angular">
+                    <img class="skill-img" src="./../../../assets/Logos/express.png" alt="angular">
+                    <img class="skill-img" src="./../../../assets/Logos/node.png" alt="angular">
+                    <img class="skill-img" src="./../../../assets/Logos/mongo-db.png" alt="angular">
+                    <img class="skill-img" src="./../../../assets/Logos/css.png" alt="angular">
+                    <img class="skill-img" src="./../../../assets/Logos/html.png" alt="angular">
                 </div>
             </div>
-            <div class="col-lg-6 col-md-8 col-sm-12 col-12">
-                <div class="content-card">
+            <div class="col-12 mb-2">
+                <div class="content-card" style="height: 100%;">
                     <ng-container *ngFor="let skill of skillsList">
-                        <p><span class="text-accent-primary fw-bold">{{skill.title}}:</span> {{skill.description}}</p>
+                        <p class="mb-3"><span class="text-accent-primary fw-bold">{{skill.title}}:</span> {{skill.description}}</p>
                     </ng-container>
                 </div>
             </div>
@@ -20,10 +29,11 @@
     </div>
 
     <div>
-        <h1 class="text-center">Projects</h1>
+        <p class="mb-3 text-center section-name">Projects</p>
+        <h2 class="text-center mb-5">Some of my projects</h2>
         <div class="row my-3">
             <ng-container *ngFor="let project of projects">
-                <div class="col-6 col-lg-3 col-md-4 col-sm-6">
+                <div class="col-6 col-lg-3 col-md-6 col-sm-6 p-1">
                     <div class="content-card project p-2">
                         <div class="project-header mb-2">
                             <div class="thumb mb-2">
@@ -35,8 +45,8 @@
                                 <div class="stack-tag" *ngFor="let tag of project.stack">{{tag}}</div>
                             </div>
                         </div>
-                        <div class="d-flex border-top pt-2">
-                            <button class="button">Preview</button>
+                        <div class="d-flex pt-2">
+                            <button class="preview-btn">Preview</button>
                         </div>
                     </div>
                 </div>

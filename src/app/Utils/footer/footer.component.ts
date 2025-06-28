@@ -11,22 +11,22 @@ import { Component } from '@angular/core';
 export class FooterComponent {
   handles: any[] = [
     {
-      icon: "",
+      icon: "fa-brands fa-instagram",
       url: "",
-      name: "Insta"
+      name: "Instagram"
     },
     {
-      icon: "",
+      icon: "fa-brands fa-linkedin",
       url: "",
       name: "LinkedIn"
     },
     {
-      icon: "",
+      icon: "fa-brands fa-facebook",
       url: "",
       name: "Facebook"
     },
     {
-      icon: "",
+      icon: "fa-brands fa-github",
       url: "",
       name: "Github"
     }
@@ -35,19 +35,19 @@ export class FooterComponent {
   pageLinks: any[] = [
     {
       section: "About me",
-      url: ""
+      url: "#intro"
     },
     {
       section: "Resume",
       url: ""
     },
     {
-      section: "Contact me",
-      url: ""
+      section: "Projects",
+      url: "#projects"
     },
     {
       section: "Experience",
-      url: ""
+      url: "#experience"
     }
   ];
 }

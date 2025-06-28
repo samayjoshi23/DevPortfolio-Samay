@@ -6,64 +6,93 @@ import { Component, OnInit } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './projects.component.html',
-  styleUrl: './projects.component.scss'
+  styleUrl: './projects.component.scss',
 })
 export class ProjectsComponent implements OnInit {
-  
   skillsList: any[] = [
     {
-      title: "Front-End",
-      description: "Skill 1, Skill2, Skill3, Skill4"
+      title: 'Languages & Frameworks',
+      description:
+        'Angular 9+, .NET Web API, Node.js, JavaScript, SQL, Firebase, EJS ',
     },
     {
-      title: "Back-End",
-      description: "Skill 1"
+      title: 'Frontend & Backend',
+      description:
+        'Reactive Forms, UI/UX, Optimization, REST APIs, Entity Framework, Console Apps, Microservices ',
     },
     {
-      title: "Tools",
-      description: "Skill 1, Skill2"
+      title: 'Database & Cloud',
+      description:
+        'SQL Server, T-SQL, Stored Procedures, Query Tuning, Azure, AWS, GCP ',
     },
     {
-      title: "Others",
-      description: "Skill 1, Skill 2, Skill 3, Skill 4"
+      title: 'Dev Tools & CRM',
+      description:
+        'Postman, Azure DevOps, Azure Git, Selenium (basic), Salesforce, HubSpot, Freshworks, Dynamics 365 ',
+    },
+    {
+      title: 'Practices',
+      description:
+        'SOLID, Agile/Scrum, CI/CD, Unit Testing, Factory & Repository Patterns',
     },
   ];
 
-  projects : any[] = [
+  projects: any[] = [
     {
       id: 1,
-      title: "Foody travelers",
-      description: "A tour & trip booking with Indian State wise Packages, including options to try out famous food options of the city and state",
-      images: ["link1", "link2"],
-      stack: ["Node.JS", "EJS", "Express.JS", "MongoDB"]
+      title: 'Saventin Ultrastructures',
+      description:
+        'Admin dashboard for HRMS, CMS, and project portfolio management with real-time updates and role-based access.',
+      images: ['link1', 'link2'],
+      stack: [
+        'Angular 16',
+        'Firebase Realtime DB',
+        'Firebase Storage',
+        'Hostinger',
+      ],
     },
     {
       id: 2,
-      title: "Bunk India",
-      description: "A hostel management web app with Occupany management, tiffin service and monthly fee billings",
-      images: ["link1", "link2"],
-      stack: ["Angular 12", "MySQL", "GoDaddy"]
+      title: 'Bunk India - Hostel Manager',
+      description:
+        'Hostel management system for student data, room occupancy, food services, and automated monthly billing.',
+      images: ['link1', 'link2'],
+      stack: ['Vanilla JS', 'HTML', 'CSS', 'GoDaddy'],
     },
     {
       id: 3,
-      title: "Pill n Chill",
-      description: "A online medicinal E-Commerce platform, with separate portals for Admin (Managing categoies, tags, pricing and billings) and User (Cart)",
-      images: ["link1", "link2"],
-      stack: [".Net Web API", "Angular 13", "SQL Server", "Bootstrap", "Azure"]
+      title: 'Pill’n Chill',
+      description:
+        'Full-stack E-Commerce platform with user cart, product management, admin portal, and Stripe payment integration.',
+      images: ['link1', 'link2'],
+      stack: [
+        'Angular',
+        '.NET Web API',
+        'SQL Server',
+        'Azure',
+        'Figma',
+        'Stripe',
+      ],
     },
     {
       id: 4,
-      title: "Saventin Ultrastructures",
-      description: "A construction portfolio and a Admin recruitment portal, with Role and Content Management",
-      images: ["link1", "link2"],
-      stack: ["Angular 16", "Firebase Realtime DB", "Firebase Storage", "Bootstrap"]
+      title: 'Foody Travelers',
+      description:
+        'Tour and food exploration platform offering city-wise packages with regional cuisines and trip booking features.',
+      images: ['link1', 'link2'],
+      stack: ['Node.js', 'Express.js', 'EJS', 'MongoDB'],
+    },
+    {
+      id: 5,
+      title: 'Samarth CRM & CMS (In Progress)',
+      description:
+        'Custom CRM system with CMS and role-based access, designed as a PWA with planned AWS EC2 deployment.',
+      images: ['link1', 'link2'],
+      stack: ['Angular', '.NET Web API', 'SQL Server', 'AWS EC2', 'Figma'],
     },
   ];
 
-  constructor(){
-
-  }
+  constructor() {}
 
   ngOnInit(): void {}
-
 }

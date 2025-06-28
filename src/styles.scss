@@ -44,7 +44,7 @@ body.light{
   /* Light theme colors */
   --bg-color: #ffffff;
   --text-color: #111111;
-  --primary-color: #2a7ae2;
+  --primary-color: #457dc5;
   --secondary-color: #6f6f6f;
   --border-color: #dcdcdc;
   --card-bg: #fcfcfc;
@@ -108,4 +108,11 @@ a:hover {
 
 .bg-accent-secondary {
   background-color: var(--secondary-color);
+}
+
+.section-name{
+  font-size: 1.25rem;
+  padding-bottom: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
 }

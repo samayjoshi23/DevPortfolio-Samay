@@ -1,3 +1,57 @@
-.hero-section{
-    height: 100vh;
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.social-links {
+  font-size: 1.5rem;
+  i {
+    cursor: pointer;
+  }
+}
+
+.social-links i:hover {
+  font-size: 1.75rem;
+  color: var(--link-color);
+}
+
+.intro-name {
+  font-size: 2.5rem;
+}
+
+.intro-profession {
+  font-size: 3.5rem;
+}
+
+.intro-description {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .intro-name {
+    font-size: 2rem;
+  }
+
+  .intro-profession {
+    font-size: 3rem;
+  }
+
+  .intro-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .intro-name {
+    font-size: 1.75rem;
+  }
+
+  .intro-profession {
+    font-size: 2.5rem;
+  }
+
+  .intro-description {
+    font-size: 1rem;
+  }
 }

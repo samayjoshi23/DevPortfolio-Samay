@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { CareerStatistics, careerStatistics } from '../../Models/Stats';
+import { Offerings, Statistics } from '../../Models/ExperienceModel';
 
 @Component({
   selector: 'app-experience',
@@ -9,59 +11,76 @@ import { Component } from '@angular/core';
   styleUrl: './experience.component.scss',
 })
 export class ExperienceComponent {
-  expStats: any[] = [
+  staticData: CareerStatistics = careerStatistics;
+
+  expStats: Statistics[] = [
     {
-      icon: 'ico',
-      title: '12+',
-      description: 'Years of experience',
+      icon: 'fa-solid fa-briefcase',
+      title: this.staticData.experience + '+',
+      description: 'Years of professional experience',
     },
     {
-      icon: 'ico',
-      title: '18+',
-      description: 'Clients',
+      icon: 'fa-solid fa-user-check',
+      title: this.staticData.clients + '+',
+      description: 'Satisfied clients served',
     },
     {
-      icon: 'ico',
-      title: '120+',
-      description: 'Projects done',
+      icon: 'fa-solid fa-code-branch',
+      title: this.staticData.projects + '+',
+      description: 'Projects successfully delivered',
     },
     {
-      icon: 'ico',
-      title: '6+',
-      description: 'Awards winner',
+      icon: 'fa-solid fa-award',
+      title: this.staticData.recognition + '+',
+      description: 'Awards and recognitions',
     },
   ];
 
-  offerings: any[] = [
+  offerings: Offerings[] = [
     {
-      icon: 'icon',
-      title: 'Web developement',
-      description: 'here is the description for the current section.',
+      title: 'Custom Web Apps & Dashboards',
+      description:
+        'Full-stack development of Scalable Web Apps with Deployment support.',
+      icon: 'fa-solid fa-laptop',
     },
     {
-      icon: 'icon',
-      title: 'Database management',
-      description: 'here is the description for the current section.',
+      title: 'Develop and Integrate REST APIs',
+      description:
+        'Build secure, well-structured APIs and connect external services.',
+      icon: 'fa-solid fa-plug',
     },
     {
-      icon: 'icon',
-      title: 'API development',
-      description: 'here is the description for the current section.',
+      title: 'Angular Frontend Development',
+      description:
+        'Create dynamic, responsive uis with Angular and Reactive Forms.',
+      icon: 'fa-solid fa-layer-group',
     },
     {
-      icon: 'icon',
-      title: 'Performance optimization',
-      description: 'here is the description for the current section.',
+      title: 'Backend services with .NET',
+      description: 'Build clean, modular, and efficient .NET Web APIs with C#.',
+      icon: 'fa-solid fa-server',
     },
     {
-      icon: 'icon',
-      title: 'CRM and HRMS solutions',
-      description: 'here is the description for the current section.',
+      title: 'SQL Database Design & Optimization',
+      description:
+        'Design schemas, write procedures, and tune slow SQL queries.',
+      icon: 'fa-solid fa-database',
     },
     {
-      icon: 'icon',
-      title: 'E-commerce Solutions',
-      description: 'here is the description for the current section.',
+      title: 'Bug Fixing & Refactoring',
+      description: 'debug and improve existing angular/.net codebases.',
+      icon: 'fa-solid fa-screwdriver-wrench',
+    },
+    {
+      title: 'Custom CRM Development',
+      description:
+        'Design and build tailored CRM systems for lead tracking, sales, and internal operations using Angular and .NET.',
+      icon: 'fa-solid fa-address-card',
+    },
+    {
+      title: 'MVPs & Rapid Prototyping',
+      description: 'Quick turnaround MVPs to validate your product idea.',
+      icon: 'fa-solid fa-rocket',
     },
   ];
 }
