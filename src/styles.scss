@@ -72,6 +72,7 @@ body {
   overflow-x: hidden;
   color: var(--text-color);
   background-color: var(--bg-color);
+  position: relative;
 }
 
 i {
@@ -115,4 +116,12 @@ a:hover {
   padding-bottom: 2rem;
   font-weight: bold;
   color: var(--primary-color);
+}
+
+.modal, .modal-content {
+  background-color: var(--bg-color) !important;
+
+  button.btn-close {
+    background-color: var(--secondary-color) !important; 
+  }
 }

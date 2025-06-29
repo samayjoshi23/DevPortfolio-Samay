@@ -78,3 +78,10 @@
   opacity: 1;
   border-color: #007bff;
 }
+
+.naviagtion-button {
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}

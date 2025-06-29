@@ -4,18 +4,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="content-card skill-img-container mb-2">
-                    <img class="skill-img" src="./../../../assets/Logos/angular.png" alt="angular">
-                    <img class="skill-img" src="./../../../assets/Logos/azure.png" alt="angular">
-                    <img class="skill-img" src="./../../../assets/Logos/dot-net.png" alt="angular">
-                    <img class="skill-img" src="./../../../assets/Logos/c-sharp.png" alt="angular">
-                    <img class="skill-img" src="./../../../assets/Logos/gcp.png" alt="angular">
-                    <img class="skill-img" src="./../../../assets/Logos/js.png" alt="angular">
-                    <img class="skill-img" src="./../../../assets/Logos/sql.png" alt="angular">
-                    <img class="skill-img" src="./../../../assets/Logos/express.png" alt="angular">
-                    <img class="skill-img" src="./../../../assets/Logos/node.png" alt="angular">
-                    <img class="skill-img" src="./../../../assets/Logos/mongo-db.png" alt="angular">
-                    <img class="skill-img" src="./../../../assets/Logos/css.png" alt="angular">
-                    <img class="skill-img" src="./../../../assets/Logos/html.png" alt="angular">
+                    <img *ngFor="let logo of logos" class="skill-img" [src]="logoBasePath + '/' + logo" [alt]="logo">
                 </div>
             </div>
             <div class="col-12 mb-2">
@@ -30,7 +19,7 @@
 
     <div>
         <p class="mb-3 text-center section-name">Projects</p>
-        <h2 class="text-center mb-5">Some of my recent projects</h2>
+        <h2 class="text-center mb-4">Some of my recent projects</h2>
         <div class="row my-3">
             <ng-container *ngFor="let project of projects">
                 <div class="col-6 col-lg-3 col-md-6 col-sm-6 p-1">

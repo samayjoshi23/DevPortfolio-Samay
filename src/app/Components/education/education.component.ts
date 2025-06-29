@@ -17,7 +17,7 @@ export class EducationComponent implements OnInit {
   companyList: Company[] = [
     {
       id: 1,
-      logo: './../../../assets/Company/spektra.jfif',
+      logo: 'assets/Company/spektra.jfif',
       name: 'Spektra Systems, India',
       duration: '2022 - 2024',
       position: 'Associtate Software Development Engineer',
@@ -39,7 +39,7 @@ export class EducationComponent implements OnInit {
     },
     {
       id: 2,
-      logo: './../../../assets/Company/spektra.jfif',
+      logo: 'assets/Company/spektra.jfif',
       name: 'Spektra Systems, India',
       duration: '2024 - Present',
       position: 'Software Development Engineer - 1',

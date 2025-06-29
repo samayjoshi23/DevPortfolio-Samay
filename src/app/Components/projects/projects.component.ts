@@ -11,8 +11,24 @@ import { Project, Skill } from '../../Models/ProjectModel';
   styleUrl: './projects.component.scss',
 })
 export class ProjectsComponent implements OnInit {
-  basePath: string = "./../../../assets/Projects";
+  basePath: string = "assets/Projects";
+  logoBasePath: string = "assets/Logos";
   selectedProject: Project | null = null;
+
+  logos: string[] = [
+    "angular.png",
+    "azure.png",
+    "dot-net.png",
+    "c-sharp.png",
+    "gcp.png",
+    "js.png",
+    "sql.png",
+    "express.png",
+    "node.png",
+    "mongo-db.png",
+    "css.png",
+    "html.png"
+  ] 
 
   skillsList: Skill[] = [
     {
@@ -52,7 +68,7 @@ export class ProjectsComponent implements OnInit {
       title: 'Pill’n Chill',
       description: 'Full-stack E-Commerce platform with user cart, product management, admin portal, and Stripe payment integration.',
       dir: "PillnChill",
-      images: ['1.png', '2.png', '3.png', '4,png', '5.png', '6.png', '7.png', '8.png'],
+      images: ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png'],
       stack: ['Angular', '.NET Web API', 'SQL Server', 'Azure', 'Figma', 'Stripe'],
       thumb: ""
     },
@@ -97,7 +113,7 @@ export class ProjectsComponent implements OnInit {
       title: 'Other Projects',
       description: 'Some of the minor projects I worked on...',
       dir: "Other",
-      images: ['1.png', '2.png', '3.png', '4.png', '5.png', '6,png'],
+      images: ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png'],
       stack: ['HTML', 'CSS', 'JavaScript', 'ExpressJs', 'NodeJs', 'MongoDB', 'EJS'],
       thumb: ""
     },
@@ -114,7 +130,7 @@ export class ProjectsComponent implements OnInit {
 
       this.projects[p].thumb = this.projects[p].images.length > 0 
         ? this.projects[p].images[0]
-        : this.basePath + "/no-photo.png";
+        : this.basePath + "/no-img.jpg";
     }
     
     this.selectedProject = this.projects[0];

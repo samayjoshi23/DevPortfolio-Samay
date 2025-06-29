@@ -25,7 +25,7 @@
             <!-- right section -->
             <div class="company-exp col-12 col-lg-8 col-md-8 col-sm-12 ps-xl-5 ps-3">
                 <div class="d-flex flex-column" *ngIf="!!slectedCompanyData">
-                    <h5 class="company-position mb-3 text-accent-primary">{{slectedCompanyData?.position}}</h5>
+                    <h5 class="company-position mb-3 text-accent-primary">{{slectedCompanyData.position}}</h5>
                     <ul class="mb-3 ms-4">
                         <li *ngFor="let bullet of slectedCompanyData?.keyPoints" class="mb-2">{{bullet}}</li>
                     </ul>

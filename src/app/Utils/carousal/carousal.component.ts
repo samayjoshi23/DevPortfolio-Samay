@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component, HostListener, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-carousal',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './carousal.component.html',
   styleUrl: './carousal.component.scss'
 })

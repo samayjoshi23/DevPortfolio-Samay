@@ -12,15 +12,13 @@ import { EducationComponent } from './Components/education/education.component';
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet,
-    NavbarComponent,
     FooterComponent,
-    CarousalComponent,
     IntroComponent,
     ProjectsComponent,
     ExperienceComponent,
-    EducationComponent
-  ],
+    EducationComponent,
+    NavbarComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
