@@ -1,15 +1,15 @@
 <div class="d-flex justify-content-between align-items-center p-3">
-    <h2>
+    <h2 class="d-flex align-items-center">
         <i class="fa-solid fa-chevron-left text-accent-primary"></i>
-        <i class="fa-solid fa-chevron-right text-accent-primary"></i>
+        <i class="fa-solid fa-chevron-right text-accent-primary me-2"></i>
         Samay Joshi
     </h2>
     <div>
         <div class="d-flex align-items-center">
-            <a href="#intro" class="mx-3">Home</a>
-            <a href="#footer" class="mx-3">Contact me</a>
-            <a href="#experience" class="mx-3">Experience</a>
-            <a href="#projects" class="mx-3">Projects</a>
+            <a href="#intro" class="navigaion-links mx-3">Home</a>
+            <a href="#footer" class="navigaion-links mx-3">Contact me</a>
+            <a href="#experience" class="navigaion-links mx-3">Experience</a>
+            <a href="#projects" class="navigaion-links mx-3">Projects</a>
             <button class="mode-btn" (click)="changeTheme(!darkMode)">
                 <i class="fa-solid fa-sun" *ngIf="darkMode"></i>
                 <i class="fa-solid fa-moon" *ngIf="!darkMode"></i>

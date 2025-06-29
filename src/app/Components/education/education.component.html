@@ -1,4 +1,4 @@
-<section class="p-3">
+<section class="py-3">
     
     <!-- Experience -->
     <div class="mb-4 content-card">
@@ -41,7 +41,7 @@
     <div class="mb-4">
         <p class="mb-4 text-center section-name">Education</p>
         <div class="d-flex justify-content-center">
-            <div class="education-container d-flex flex-column">
+            <div class="education-container d-flex flex-column px-3">
                 <ng-container *ngFor="let ed of educationList">
                     <div class="education d-flex flex-column">
                         <p class="education-header">
@@ -51,7 +51,11 @@
                         <div class="row education-description-wrapper pt-2 pb-5">
                             <div class="dot"></div>
                             <div class="col-3"></div>
-                            <div class="col-8">{{ed.description}}</div>
+                            <div class="col-9 px-0">
+                                <p>
+                                    {{ed.description}}
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </ng-container>

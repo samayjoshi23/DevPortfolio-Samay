@@ -84,10 +84,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 .content-card {
   background-color: var(--card-bg);
   border: 2px solid var(--border-color);
@@ -124,4 +120,16 @@ a:hover {
   button.btn-close {
     background-color: var(--secondary-color) !important; 
   }
+}
+
+
+@media (max-width: 768px) {
+  .content-card {
+    padding: 0.8rem;
+  }
+
+  p, li {
+    font-size: 0.9rem;
+  }
+
 }

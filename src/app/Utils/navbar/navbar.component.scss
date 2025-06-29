@@ -5,3 +5,13 @@
     font-size: 18px;
     padding: 0.25rem;
 }
+
+.navigaion-links {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .navigaion-links {
+        display: none;
+    }
+}

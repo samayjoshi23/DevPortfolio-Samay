@@ -4,6 +4,17 @@
   align-items: center;
 }
 
+.author-profile {
+  width: 80%;
+  overflow: hidden;
+  aspect-ratio: 3/2;
+  
+  img {
+    width: 100%;
+    border-radius: 10px;
+  };
+}
+
 .social-links {
   font-size: 1.5rem;
   i {
@@ -22,36 +33,66 @@
 
 .intro-profession {
   font-size: 3.5rem;
+  margin-bottom: 2rem;
 }
 
 .intro-description {
   font-size: 1.25rem;
 }
 
+.desc-img {
+  width: 2rem;
+  margin: 0.1rem 0.25rem;
+}
+
+.tag {
+  border: 3px solid var(--border-color);
+  border-radius: 5px;
+  padding: 0.25rem 0.75rem;
+  background-color: transparent;
+  color: var(--text-color);
+}
+
+// ========== MEDIA QUERIES ==============
+
 @media (max-width: 768px) {
   .intro-name {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .intro-profession {
-    font-size: 3rem;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
   }
 
   .intro-description {
     font-size: 1rem;
+  }
+
+  .desc-img {
+    width: 1.75rem;
+  }
+  
+  .author-profile {
+    width: 100%;
+    padding: 0.5rem;
   }
 }
 
 @media (max-width: 500px) {
   .intro-name {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
   }
 
   .intro-profession {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
   }
 
   .intro-description {
     font-size: 1rem;
+  }
+
+  .desc-img {
+    width: 1.5rem;
   }
 }
