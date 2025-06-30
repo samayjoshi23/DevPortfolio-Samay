@@ -39,7 +39,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/portfolio-ui",
+            "outputPath": "dist/PortfolioUI/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -116,6 +116,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
