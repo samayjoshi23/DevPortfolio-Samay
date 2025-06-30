@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { SocialMediaLink } from '../../Models/StatModels';
+import { socialMediaHandles, staticData } from '../../Models/StaticData';
 
 @Component({
   selector: 'app-footer',
@@ -9,45 +11,28 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-  handles: any[] = [
-    {
-      icon: "fa-brands fa-instagram",
-      url: "",
-      name: "Instagram"
-    },
-    {
-      icon: "fa-brands fa-linkedin",
-      url: "",
-      name: "LinkedIn"
-    },
-    {
-      icon: "fa-brands fa-facebook",
-      url: "",
-      name: "Facebook"
-    },
-    {
-      icon: "fa-brands fa-github",
-      url: "",
-      name: "Github"
-    }
-  ];
+  handles: SocialMediaLink[] = socialMediaHandles;
 
   pageLinks: any[] = [
     {
       section: "About me",
-      url: "#intro"
+      url: "#intro",
+      type: "link"
     },
     {
       section: "Resume",
-      url: ""
+      url: staticData.URL.Resume,
+      type: "file"
     },
     {
       section: "Projects",
-      url: "#projects"
+      url: "#projects",
+      type: "link"
     },
     {
       section: "Experience",
-      url: "#experience"
+      url: "#experience",
+      type: "link"
     }
   ];
 }

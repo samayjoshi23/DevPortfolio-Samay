@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { CareerStatistics, careerStatistics } from '../../Models/Stats';
+import { CareerStatistics } from '../../Models/StatModels';
 import { Offerings, Statistics } from '../../Models/ExperienceModel';
+import { staticData } from '../../Models/StaticData';
 
 @Component({
   selector: 'app-experience',
@@ -11,27 +12,27 @@ import { Offerings, Statistics } from '../../Models/ExperienceModel';
   styleUrl: './experience.component.scss',
 })
 export class ExperienceComponent {
-  staticData: CareerStatistics = careerStatistics;
+  staticData: CareerStatistics = staticData.Stat;
 
   expStats: Statistics[] = [
     {
       icon: 'fa-solid fa-briefcase',
-      title: this.staticData.experience + '+',
+      title: this.staticData.Experience + '+',
       description: 'Years of professional experience',
     },
     {
       icon: 'fa-solid fa-user-check',
-      title: this.staticData.clients + '+',
+      title: this.staticData.Clients + '+',
       description: 'Satisfied clients served',
     },
     {
       icon: 'fa-solid fa-code-branch',
-      title: this.staticData.projects + '+',
+      title: this.staticData.Projects + '+',
       description: 'Projects successfully delivered',
     },
     {
       icon: 'fa-solid fa-award',
-      title: this.staticData.recognition + '+',
+      title: this.staticData.Recognition + '+',
       description: 'Awards and recognitions',
     },
   ];

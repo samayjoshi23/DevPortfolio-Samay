@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Company } from '../../Models/CompanyModel';
 import { Education } from '../../Models/EducationModel';
-import { careerStatistics } from '../../Models/Stats';
+import { staticData } from '../../Models/StaticData';
 
 @Component({
   selector: 'app-education',
@@ -13,7 +13,7 @@ import { careerStatistics } from '../../Models/Stats';
 })
 export class EducationComponent implements OnInit {
   slectedCompanyData: Company | null = null;
-  experience: number = careerStatistics.experience;
+  experience: number = staticData.Stat.Experience;
   companyList: Company[] = [
     {
       id: 1,

@@ -3,9 +3,11 @@
         <div class="col-lg-6 col-md-4 col-sm-12 col-12 p-2">
             <div class="d-flex">
                 <div class="social-links d-flex flex-column justify-content-around mx-3">
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-instagram"></i>
+                    <ng-container *ngFor="let link of socialHandles">
+                        <a [href]="link.url" target="_blank" rel="noopener noreferrer">
+                            <i [class]="link.icon" [class.mx-3]="true"></i>
+                        </a>
+                    </ng-container>
                 </div>
                 <div class="author-profile">
                     <img class="" src="assets/Author/author.jpg" alt="_profile_image">
@@ -30,7 +32,7 @@
                 <img class="desc-img" src="assets/Logos/mongo-db.png" alt="mongoDB">
                 <p class="text-accent-secondary mt-2">... and more</p>
             </div>
-            <a class="tag" download="" href="assets/Files/SamayJoshi-Resume.pdf">
+            <a class="tag" download="" [href]="resumeLink">
                 Resume
                 <i class="fa-solid fa-download ms-2"></i>
             </a>
