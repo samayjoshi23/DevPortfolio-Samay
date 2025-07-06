@@ -43,45 +43,53 @@ export class ExperienceComponent {
       description:
         'Full-stack development of Scalable Web Apps with Deployment support.',
       icon: 'fa-solid fa-laptop',
+      class: 'col-lg-4 col-md-6 col-sm-6 col-6 p-2'
     },
     {
       title: 'Develop and Integrate REST APIs',
       description:
         'Build secure, well-structured APIs and connect external services.',
       icon: 'fa-solid fa-plug',
+      class: 'col-lg-4 col-md-6 col-sm-6 col-6 p-2'
     },
     {
       title: 'Angular Frontend Development',
       description:
         'Create dynamic, responsive uis with Angular and Reactive Forms.',
       icon: 'fa-solid fa-layer-group',
+      class: 'col-lg-4 col-md-6 col-sm-12 col-12 p-2'
     },
     {
       title: 'Backend services with .NET',
       description: 'Build clean, modular, and efficient .NET Web APIs with C#.',
       icon: 'fa-solid fa-server',
+      class: 'col-lg-4 col-md-6 col-sm-6 col-6 p-2'
     },
     {
       title: 'SQL Database Design & Optimization',
       description:
         'Design schemas, write procedures, and tune slow SQL queries.',
       icon: 'fa-solid fa-database',
+      class: 'col-lg-4 col-md-6 col-sm-6 col-6 p-2'
     },
     {
       title: 'Bug Fixing & Refactoring',
       description: 'debug and improve existing angular/.net codebases.',
       icon: 'fa-solid fa-screwdriver-wrench',
+      class: 'col-lg-4 col-md-6 col-sm-12 col-12 p-2'
     },
     {
       title: 'Custom CRM Development',
       description:
         'Design and build tailored CRM systems for lead tracking, sales, and internal operations using Angular and .NET.',
       icon: 'fa-solid fa-address-card',
+      class: 'col-lg-4 col-md-6 col-sm-6 col-6 p-2'
     },
     {
       title: 'MVPs & Rapid Prototyping',
       description: 'Quick turnaround MVPs to validate your product idea.',
       icon: 'fa-solid fa-rocket',
+      class: 'col-lg-4 col-md-6 col-sm-6 col-6 p-2'
     },
   ];
 }

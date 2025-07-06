@@ -1,5 +1,5 @@
 // Defaults
-html *{
+html * {
   box-sizing: border-box;
   // font-family: "Cascadia Code", sans-serif;
   font-family: "Fira Code", monospace;
@@ -40,7 +40,7 @@ a {
   --hover-bg: #e8f0fe;
 }
 
-body.light{
+body.light {
   /* Light theme colors */
   --bg-color: #ffffff;
   --text-color: #111111;
@@ -89,6 +89,14 @@ a {
   border: 2px solid var(--border-color);
   border-radius: 10px;
   padding: 1rem;
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
 }
 
 .text-accent-primary {
@@ -107,29 +115,54 @@ a {
   background-color: var(--secondary-color);
 }
 
-.section-name{
+.section-name {
   font-size: 1.25rem;
   padding-bottom: 2rem;
   font-weight: bold;
   color: var(--primary-color);
 }
 
-.modal, .modal-content {
+.modal,
+.modal-content {
   background-color: var(--bg-color) !important;
 
   button.btn-close {
-    background-color: var(--secondary-color) !important; 
+    background-color: var(--secondary-color) !important;
   }
 }
 
+.section-heading {
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+}
 
 @media (max-width: 768px) {
   .content-card {
-    padding: 0.8rem;
+    padding: 0.5rem;
+
+    .title {
+      font-size: 1.1rem;
+    }
+
+    .description {
+      font-size: 0.9rem;
+    }
   }
 
-  p, li {
+  p,
+  li {
     font-size: 0.9rem;
   }
 
+  .section-heading {
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .section-heading {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
 }

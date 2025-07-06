@@ -7,5 +7,6 @@ export interface Statistics {
 export interface Offerings {
     title: string,
     description: string,
-    icon: string
+    icon: string,
+    class: string
 }

@@ -1,3 +1,15 @@
+.experience-stat {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.offerings-wrapper {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 4fr 4fr 4fr;
+}
+
 .exp-card {
     i {
         font-size: 1.5rem;
@@ -21,6 +33,27 @@
         h1 {
             font-size: 2.5rem;
         }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .offerings-wrapper {
+        grid-template-columns: 6fr 6fr;
     }
 }
 
+@media (max-width: 550px) {
+    .experience-stat {
+        grid-template-columns: 1fr 1fr;
+
+        .exp-card {
+            padding-top: 0.5rem;
+        }
+    }
+
+    .offerings-wrapper {
+        grid-template-columns: 12fr;
+    }
+}

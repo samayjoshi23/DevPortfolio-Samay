@@ -20,7 +20,7 @@ export class EducationComponent implements OnInit {
       logo: 'assets/Company/spektra.jfif',
       name: 'Spektra Systems, India',
       duration: '2022 - 2024',
-      position: 'Associtate Software Development Engineer',
+      position: 'Associate Software Development Engineer',
       keyPoints: [
         'Built Angular components using Reactive Forms with custom validators.',
         'Integrated REST APIs with Angular frontends using HttpClient.',

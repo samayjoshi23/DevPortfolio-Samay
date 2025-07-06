@@ -1,8 +1,8 @@
 <div class="hero-section">
-    <div class="row w-100">
-        <div class="col-lg-6 col-md-4 col-sm-12 col-12 p-2">
+    <div class="row">
+        <div class="col-lg-6 col-md-5 col-sm-12 col-12 p-2 author-intro">
             <div class="d-flex">
-                <div class="social-links d-flex flex-column justify-content-around mx-3">
+                <div class="social-links d-flex flex-column justify-content-around">
                     <ng-container *ngFor="let link of socialHandles">
                         <a [href]="link.url" target="_blank" rel="noopener noreferrer">
                             <i [class]="link.icon" [class.mx-3]="true"></i>
@@ -14,7 +14,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-6 col-md-8 col-sm-12 col-12 px-3">
+        <div class="col-lg-6 col-md-7 col-sm-12 col-12 px-3">
             <h1 class="intro-name">Hi I'am <span class="fw-bold">Samay</span></h1>
             <h1 class="intro-profession"><strong class="text-accent-primary fw-bold">{{"{Full Stack}"}}</strong> Web Developer_</h1>
             <p class="intro-description mb-3">I build real-world web apps with

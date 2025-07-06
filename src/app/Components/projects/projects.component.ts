@@ -59,7 +59,7 @@ export class ProjectsComponent implements OnInit {
       title: 'Saventin Ultrastructures',
       description: 'Admin dashboard for HRMS, CMS, and project portfolio management with real-time updates and role-based access.',
       dir: "Saventin",
-      images: ['1.png', '2.png', '3.png', '4,png', '5.png', '6.png', '7.png', '8.png'],
+      images: ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png'],
       stack: ['Angular 16', 'Firebase Realtime DB', 'Firebase Storage', 'Hostinger'],
       thumb: ""
     },
