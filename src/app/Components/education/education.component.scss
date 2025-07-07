@@ -14,6 +14,13 @@
     border-color: var(--primary-color);
 }
 
+.education-header {
+    .year {
+        text-wrap-mode: nowrap;
+        padding-right: 0.25rem;
+    }
+}
+
 .education-description-wrapper {
     position: relative;
     border-left: 2px solid rgb(209, 209, 209);
@@ -22,12 +29,13 @@
 .education-description-wrapper .dot {
     padding: 0;
     position: absolute;
-    left: -5px;
-    top: -17px;
-    width: 10px;
-    height: 10px;
+    left: -11px;
+    top: 1px;
+    width: 20px;
+    height: 20px;
     background-color: rgb(146, 146, 146);
     border-radius: 50%;
+    border: 6px solid white;
 }
 
 .company-icon {
