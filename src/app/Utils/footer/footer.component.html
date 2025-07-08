@@ -11,10 +11,10 @@
             </a>
         </ng-container>
     </div>
-    <div class="d-flex my-3">
+    <div class="d-flex my-3 justify-content-between">
         <ng-container *ngFor="let link of pageLinks">
             <a [href]="link.url" download="" *ngIf="link.type == 'file'">{{link.section}}</a>
-            <a class="mx-3" [href]="link.url" *ngIf="link.type == 'link'">{{link.section}}</a>
+            <a [href]="link.url" *ngIf="link.type == 'link'">{{link.section}}</a>
         </ng-container>
     </div>
 </div>

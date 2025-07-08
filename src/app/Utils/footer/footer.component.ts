@@ -15,7 +15,7 @@ export class FooterComponent {
 
   pageLinks: any[] = [
     {
-      section: "About me",
+      section: "About",
       url: "#intro",
       type: "link"
     },
