@@ -40,3 +40,11 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Local tooling and working files (not part of the site)
+/.taste-skill/
+/.agents/
+/.claude/
+/.vscode/
+/skills-lock.json
+/src/redesign-prototype.html
