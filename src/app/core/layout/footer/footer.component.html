@@ -1,0 +1,8 @@
+<div class="wrap flex flex-wrap items-center justify-between gap-4 pt-12 pb-8 text-sm text-muted">
+  <p>© {{ year }} Samay Joshi. Built with Angular.</p>
+  <ul class="flex flex-wrap gap-x-6">
+    @for (link of links; track link.href) {
+      <li><a class="link hover:text-accent" [href]="link.href">{{ link.label }}</a></li>
+    }
+  </ul>
+</div>

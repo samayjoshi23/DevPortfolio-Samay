@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+/* Theme colours come from CSS variables set by ThemeService (src/app/core/config/theme.config.ts),
+   so utilities like bg-surface, text-muted and bg-accent follow the visitor's chosen scheme. */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-tile: var(--tile);
+  --font-sans: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+}

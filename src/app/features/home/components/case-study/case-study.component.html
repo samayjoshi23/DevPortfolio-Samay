@@ -1,0 +1,91 @@
+@let cs = caseStudy();
+<article class="grid grid-cols-12 items-start gap-x-6 gap-y-6" [attr.aria-labelledby]="'case-' + cs.key">
+  <div class="col-span-12 lg:col-span-8" [class]="reversed() ? 'lg:col-start-5 lg:row-start-1' : ''">
+    @if (cs.images.length) {
+      <button type="button" class="stage" [attr.aria-label]="'Open all ' + cs.images.length + ' screens of ' + cs.title" (click)="onOpenClick($event)">
+        @if (isPhoneSet()) {
+          <span class="phones" [class.is-swapping]="isSwapping()">
+            @for (image of phoneTrio(); track $index; let first = $first) {
+              <img
+                class="phone"
+                [class.is-side]="!first"
+                [src]="image"
+                [alt]="first ? cs.title + ', screen ' + (currentIndex() + 1) : ''"
+                loading="lazy"
+                (load)="first && onStageLoad()"
+                (error)="first && onStageLoad()" />
+            }
+          </span>
+        } @else {
+          <img
+            [src]="currentImage()"
+            [alt]="cs.title + ', screen ' + (currentIndex() + 1)"
+            [class.is-portrait]="isPortrait()"
+            [class.is-swapping]="isSwapping()"
+            [attr.loading]="eager() ? null : 'lazy'"
+            (load)="onStageLoad()"
+            (error)="onStageLoad()" />
+        }
+        <span class="stage-hint">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M4 4l6 6M20 20l-6-6" /></svg>
+          {{ cs.images.length }} screens
+        </span>
+      </button>
+      <div class="mt-3 grid grid-cols-4 gap-2 sm:grid-cols-8" role="group" [attr.aria-label]="cs.title + ' screens'">
+        @for (image of cs.images; track image; let i = $index) {
+          <button type="button" class="thumb" [attr.aria-current]="i === currentIndex()" [attr.aria-label]="'Show screen ' + (i + 1) + ' of ' + cs.images.length" (click)="onThumbClick(i)">
+            <img [src]="image" alt="" loading="lazy" />
+          </button>
+        }
+      </div>
+    } @else {
+      <div class="title-card" aria-hidden="true">
+        <span class="title-card-name">{{ cs.title }}</span>
+        @if (cs.tagline) {
+          <span class="title-card-tagline">{{ cs.tagline }}</span>
+        }
+      </div>
+    }
+  </div>
+
+  <div class="case-info col-span-12 lg:col-span-4" [class]="reversed() ? 'lg:col-start-1 lg:row-start-1' : ''">
+    <h3 [id]="'case-' + cs.key" class="text-[clamp(1.75rem,1.3rem+1.4vw,2.5rem)] leading-[1.1] font-semibold tracking-[-0.03em]">{{ cs.title }}</h3>
+    <p class="mt-2 text-sm font-medium text-muted">{{ cs.kind }}</p>
+    <p class="mt-4">{{ cs.description }}</p>
+    <ul class="dot-list mt-5 grid gap-2.5">
+      @for (point of cs.points; track point) {
+        <li>{{ point }}</li>
+      }
+    </ul>
+    <ul class="mt-6 flex flex-wrap gap-1.5" aria-label="Built with">
+      @for (tech of cs.stack; track tech) {
+        <li class="tag" [class.is-hit]="tech === highlight()">{{ tech }}</li>
+      }
+    </ul>
+    <div class="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+    @if (cs.images.length) {
+      <button type="button" class="gallery-btn btn btn-quiet" (click)="onOpenClick($event)">
+        <span class="gallery-btn-stack" aria-hidden="true">
+          @for (image of cs.images.slice(0, 3); track image) {
+            <img [src]="image" alt="" loading="lazy" />
+          }
+        </span>
+        Browse all {{ cs.images.length }} screens
+        <svg class="icon-nudge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+      </button>
+    }
+    @if (cs.live) {
+      <a class="btn" [href]="cs.live" target="_blank" rel="noopener noreferrer">
+        Visit live site<span class="sr-only">: {{ cs.title }} (opens in a new tab)</span>
+        <svg class="icon-nudge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg>
+      </a>
+    }
+    @if (cs.repo && !cs.live) {
+      <a class="link gap-2 hover:text-accent" [href]="cs.repo" target="_blank" rel="noopener noreferrer">
+        <svg class="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7c-.1-.3-.5-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2Z" /></svg>
+        View code<span class="sr-only"> for {{ cs.title }} on GitHub</span>
+      </a>
+    }
+    </div>
+  </div>
+</article>

@@ -1,0 +1,79 @@
+.principles {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px 24px;
+
+  // The line joining the three steps.
+  &::before {
+    content: '';
+    position: absolute;
+    top: 26px;
+    left: 26px;
+    right: 26px;
+    height: 2px;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--accent) 45%, transparent);
+    transform-origin: left;
+  }
+}
+
+.principle {
+  position: relative;
+  transition: translate 220ms var(--ease-out);
+
+  &:hover {
+    translate: 0 -4px;
+  }
+}
+
+.principle-icon {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 999px;
+  border: 5px solid var(--bg);
+  background: var(--accent);
+  color: var(--accent-ink);
+
+  svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+:host-context(.js) .principles {
+  &::before {
+    transform: scaleX(0);
+    transition: transform 900ms var(--ease-out) 150ms;
+  }
+
+  .principle {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 500ms var(--ease-out), transform 500ms var(--ease-out), translate 220ms var(--ease-out);
+    transition-delay: calc(var(--n, 0) * 160ms + 200ms);
+  }
+
+  &.is-in {
+    &::before {
+      transform: none;
+    }
+
+    .principle {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .principles {
+    grid-template-columns: 1fr;
+
+    &::before {
+      display: none;
+    }
+  }
+}

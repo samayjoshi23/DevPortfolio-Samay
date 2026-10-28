@@ -1,0 +1,46 @@
+.hero-name {
+  font-size: var(--step-display);
+  font-weight: 600;
+  line-height: 0.92;
+  letter-spacing: -0.055em;
+}
+
+.hero-media {
+  position: relative;
+  width: 100%;
+  max-width: min(440px, calc((100svh - 300px) * 0.8));
+}
+
+// A real product screen resting on the portrait's corner: the person and the work in one picture.
+.hero-screen {
+  position: absolute;
+  left: -22%;
+  bottom: 9%;
+  width: 66%;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 6px solid var(--bg);
+  background: var(--bg);
+}
+
+@media (max-width: 1023px) {
+  .hero-media {
+    max-width: 440px;
+  }
+}
+
+@media (max-width: 639px) {
+  .hero-name {
+    font-size: 17vw;
+  }
+
+  .hero-media {
+    width: 82%;
+  }
+
+  .hero-screen {
+    left: -18%;
+    width: 70%;
+    border-width: 4px;
+  }
+}

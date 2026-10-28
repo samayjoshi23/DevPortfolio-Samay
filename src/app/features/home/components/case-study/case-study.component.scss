@@ -1,0 +1,162 @@
+.stage {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: var(--surface);
+  cursor: zoom-in;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top left;
+    transition: opacity 240ms var(--ease-out), transform 600ms var(--ease-out);
+
+    &.is-portrait {
+      object-fit: contain;
+      background: var(--surface-2);
+    }
+
+    &.is-swapping {
+      opacity: 0;
+    }
+  }
+
+  &:hover > img {
+    transform: scale(1.02);
+  }
+
+  &:hover .stage-hint {
+    transform: translateY(-2px);
+  }
+}
+
+// Phone-only projects: the selected screen up front, the next two beside it.
+.phones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4%;
+  height: 100%;
+  padding: 5% 0;
+  background: var(--surface-2);
+  transition: opacity 240ms var(--ease-out);
+
+  &.is-swapping {
+    opacity: 0;
+  }
+
+  .phone {
+    order: 2;
+    height: 100%;
+    width: auto;
+    border-radius: 16px;
+    border: 5px solid var(--bg);
+    transition: transform 400ms var(--ease-out);
+
+    &.is-side {
+      order: 1;
+      height: 84%;
+      opacity: 0.75;
+
+      & + .is-side {
+        order: 3;
+      }
+    }
+  }
+}
+
+.stage:hover .phone:not(.is-side) {
+  transform: translateY(-4px);
+}
+
+.stage-hint {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 0 16px;
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--ink);
+  font-size: var(--step-small);
+  font-weight: 500;
+  transition: transform 200ms var(--ease-out);
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.case-info {
+  @media (min-width: 1024px) {
+    position: sticky;
+    top: 104px;
+  }
+}
+
+// Three fanned thumbnails that spread on hover, so the button shows what it opens.
+.gallery-btn {
+  min-height: 56px;
+  padding-left: 12px;
+}
+
+.gallery-btn-stack {
+  position: relative;
+  width: 58px;
+  height: 30px;
+  flex: none;
+
+  img {
+    position: absolute;
+    top: 3px;
+    width: 40px;
+    height: 24px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 4px;
+    border: 2px solid var(--surface-2);
+    transition: transform 240ms var(--ease-out);
+
+    &:nth-child(1) { left: 0; transform: rotate(-8deg); }
+    &:nth-child(2) { left: 9px; transform: rotate(-2deg); }
+    &:nth-child(3) { left: 18px; transform: rotate(5deg); }
+  }
+}
+
+.gallery-btn:hover .gallery-btn-stack img {
+  &:nth-child(1) { transform: translateX(-4px) rotate(-12deg); }
+  &:nth-child(3) { transform: translateX(4px) rotate(9deg); }
+}
+
+// Stands in for screenshots until a project has them: the product's name set large on an accent field.
+.title-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+  aspect-ratio: 2 / 1;
+  padding: clamp(24px, 4vw, 48px);
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.title-card-name {
+  font-size: clamp(2.5rem, 1rem + 6vw, 6rem);
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.title-card-tagline {
+  font-size: var(--step-lead);
+  font-weight: 500;
+}

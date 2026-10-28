@@ -1,0 +1,2347 @@
+{
+ "url": "http://localhost:4200",
+ "at": "2026-10-28T18:38:03.252Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.27,
+    0.56,
+    0.6,
+    0.61,
+    0.63,
+    0.43
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 4640,
+     "screens": 5.2,
+     "words": 602,
+     "img": 37,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 8,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "author.jpg",
+      "1.png",
+      "1.png",
+      "1.jpg",
+      "no-img.jpg",
+      "no-img.jpg",
+      "no-img.jpg",
+      "1.png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "{Full Stack} Web Developer_",
+     "words": 4,
+     "chars": 27,
+     "lines": 2,
+     "size": 56,
+     "vw": 3.9,
+     "font": "Fira Code",
+     "weight": 500,
+     "tracking": 0,
+     "leading": 1.2,
+     "upper": false,
+     "italic": false,
+     "mono": true,
+     "align": "left",
+     "position": "right",
+     "widthRatio": 0.44,
+     "top": 296,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Hi I'am Samay",
+     "words": 3,
+     "lines": 1,
+     "size": 40,
+     "font": "Fira Code"
+    },
+    "headings": [
+     {
+      "text": "Samay Joshi",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Fira Code",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.18,
+      "top": 16,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Hi I'am Samay",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 40,
+      "vw": 2.8,
+      "font": "Fira Code",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.44,
+      "top": 248,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "{Full Stack} Web Developer_",
+      "words": 4,
+      "chars": 27,
+      "lines": 2,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Fira Code",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.44,
+      "top": 296,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "3+",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Fira Code",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.21,
+      "top": 950,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "3+",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Fira Code",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.16,
+      "top": 950,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "8+",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Fira Code",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.21,
+      "top": 950,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "2+",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Fira Code",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.15,
+      "top": 950,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Designing Solutions Customized to meet your requirements",
+      "words": 7,
+      "chars": 56,
+      "lines": 2,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Fira Code",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1179,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "3+ Years of passion for Programming techiques",
+      "words": 7,
+      "chars": 45,
+      "lines": 2,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Fira Code",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 1938,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Some of my recent projects",
+      "words": 5,
+      "chars": 26,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Fira Code",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3375,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Samay Joshi",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 40,
+      "vw": 2.8,
+      "font": "Fira Code",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.22,
+      "top": 4426,
+      "tag": "h1",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 11,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 3,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Fira Code",
+       "share": 1,
+       "mono": true
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      11,
+      13,
+      14,
+      16,
+      20,
+      28,
+      32,
+      40,
+      56,
+      64
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "Fira Code",
+      "size": 16,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 4.9
+     },
+     "measureChars": 37,
+     "max": {
+      "size": 64,
+      "vw": 4.4,
+      "font": "Fira Code",
+      "text": "3+"
+     },
+     "monoShare": 1,
+     "monoProseShare": 1,
+     "monoFamilies": [
+      "Fira Code"
+     ],
+     "monoSamples": [
+      "Samay Joshi",
+      "Home",
+      "Contact me",
+      "Experience",
+      "Projects",
+      "Hi I'am"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.08,
+     "smallText": 4
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#fcfcfc",
+       "top": 1858,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.99
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#111111",
+       "share": 0.52
+      },
+      {
+       "color": "#6f6f6f",
+       "share": 0.38
+      },
+      {
+       "color": "#457dc5",
+       "share": 0.1
+      }
+     ],
+     "button": {
+      "bg": "#457dc5",
+      "hsl": {
+       "h": 214,
+       "s": 0.52,
+       "l": 0.52
+      },
+      "fg": "#111111"
+     },
+     "lowContrast": [
+      {
+       "text": "Software Development Engineer - 1",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 20,
+       "fg": "#457dc5",
+       "bg": "#fcfcfc"
+      },
+      {
+       "text": "Languages & Frameworks:",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#457dc5",
+       "bg": "#fcfcfc"
+      },
+      {
+       "text": "Frontend & Backend:",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#457dc5",
+       "bg": "#fcfcfc"
+      },
+      {
+       "text": "Database & Cloud:",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#457dc5",
+       "bg": "#fcfcfc"
+      },
+      {
+       "text": "Dev Tools & CRM:",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#457dc5",
+       "bg": "#fcfcfc"
+      },
+      {
+       "text": "Practices:",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#457dc5",
+       "bg": "#fcfcfc"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 8,
+     "inHero": 1,
+     "radius": 6,
+     "height": 29,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 8,
+     "upper": 0,
+     "heroLabels": [
+      "Resume"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 21,
+     "boxRadius": 10,
+     "squareMedia": 0,
+     "roundedMedia": 8,
+     "mediaRadius": 6,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 8,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 1270
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.14
+     }
+    ],
+    "nav": {
+     "links": 4,
+     "fixed": false,
+     "height": 70,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "fira code",
+     "font awesome 6 brands",
+     "font awesome 6 free"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 4640,
+    "margins": {
+     "left": 78,
+     "right": 84
+    },
+    "sections": [
+     {
+      "sel": "section#intro",
+      "tag": "section",
+      "top": 0,
+      "height": 900,
+      "words": 33,
+      "media": 1,
+      "middle": 65,
+      "heading": {
+       "text": "{Full Stack}",
+       "size": 56,
+       "tag": "h1"
+      },
+      "left": 156,
+      "right": 80,
+      "textLeft": 736,
+      "textRight": 80,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#experience",
+      "tag": "section",
+      "top": 900,
+      "height": 926,
+      "words": 162,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "3+",
+       "size": 64,
+       "tag": "h1"
+      },
+      "left": 90,
+      "right": 106,
+      "textLeft": 90,
+      "textRight": 106,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#education",
+      "tag": "section",
+      "top": 1850,
+      "height": 1017,
+      "words": 158,
+      "media": 0,
+      "middle": 15,
+      "heading": {
+       "text": "3+ Years of",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 108,
+      "right": 142,
+      "textLeft": 172,
+      "textRight": 142,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#projects",
+      "tag": "section",
+      "top": 2891,
+      "height": 1471,
+      "words": 275,
+      "media": 7,
+      "middle": 0,
+      "heading": {
+       "text": "Some of my recent projects",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 78,
+      "right": 78,
+      "textLeft": 78,
+      "textRight": 84,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer#footer",
+      "tag": "footer",
+      "top": 4378,
+      "height": 262,
+      "words": 6,
+      "media": 0,
+      "middle": 339,
+      "heading": {
+       "text": "Samay Joshi",
+       "size": 40,
+       "tag": "h1"
+      },
+      "left": 72,
+      "right": 72,
+      "textLeft": 72,
+      "textRight": 72,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 652,
+      "height": 292
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Hi I'am Samay",
+      "size": 40,
+      "top": 248,
+      "firstScreen": true
+     },
+     {
+      "text": "{Full Stack} Web Developer_",
+      "size": 56,
+      "top": 296,
+      "firstScreen": true
+     },
+     {
+      "text": "3+",
+      "size": 64,
+      "top": 950,
+      "firstScreen": false
+     },
+     {
+      "text": "3+",
+      "size": 64,
+      "top": 950,
+      "firstScreen": false
+     },
+     {
+      "text": "8+",
+      "size": 64,
+      "top": 950,
+      "firstScreen": false
+     },
+     {
+      "text": "2+",
+      "size": 64,
+      "top": 950,
+      "firstScreen": false
+     },
+     {
+      "text": "Samay Joshi",
+      "size": 40,
+      "top": 4426,
+      "firstScreen": false
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 730,
+      "n": 5
+     },
+     {
+      "x": 90,
+      "n": 3
+     },
+     {
+      "x": 78,
+      "n": 2
+     },
+     {
+      "x": 244,
+      "n": 2
+     },
+     {
+      "x": 408,
+      "n": 2
+     },
+     {
+      "x": 525,
+      "n": 2
+     },
+     {
+      "x": 576,
+      "n": 2
+     },
+     {
+      "x": 186,
+      "n": 1
+     },
+     {
+      "x": 272,
+      "n": 1
+     },
+     {
+      "x": 311,
+      "n": 1
+     },
+     {
+      "x": 446,
+      "n": 1
+     },
+     {
+      "x": 928,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 26,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.27,
+    "voidBox": {
+     "x": 0,
+     "y": 660,
+     "w": 1440,
+     "h": 240
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.14,
+    0.82,
+    0.69,
+    0.91,
+    0.53,
+    0.46
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 5213,
+     "screens": 5.1,
+     "words": 597,
+     "img": 37,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 8,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "author.jpg",
+      "1.png",
+      "1.png",
+      "1.jpg",
+      "no-img.jpg",
+      "no-img.jpg",
+      "no-img.jpg",
+      "1.png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "{Full Stack} Web Developer_",
+     "words": 4,
+     "chars": 27,
+     "lines": 2,
+     "size": 36,
+     "vw": 4.7,
+     "font": "Fira Code",
+     "weight": 500,
+     "tracking": 0,
+     "leading": 1.2,
+     "upper": false,
+     "italic": false,
+     "mono": true,
+     "align": "left",
+     "position": "right",
+     "widthRatio": 0.54,
+     "top": 380,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Hi I'am Samay",
+     "words": 3,
+     "lines": 1,
+     "size": 24,
+     "font": "Fira Code"
+    },
+    "headings": [
+     {
+      "text": "Samay Joshi",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 28.1,
+      "vw": 3.7,
+      "font": "Fira Code",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.3,
+      "top": 17,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "{Full Stack} Web Developer_",
+      "words": 4,
+      "chars": 27,
+      "lines": 2,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Fira Code",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.54,
+      "top": 380,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "3+",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Fira Code",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.23,
+      "top": 1058,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "3+",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Fira Code",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.23,
+      "top": 1058,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "8+",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Fira Code",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.23,
+      "top": 1058,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "2+",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Fira Code",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.23,
+      "top": 1058,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Samay Joshi",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 33.5,
+      "vw": 4.4,
+      "font": "Fira Code",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.35,
+      "top": 5007,
+      "tag": "h1",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Fira Code",
+       "share": 1,
+       "mono": true
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      11,
+      13,
+      14,
+      16,
+      18,
+      20,
+      24,
+      28,
+      34,
+      36,
+      40
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Fira Code",
+      "size": 14.4,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 4.9
+     },
+     "measureChars": 31,
+     "max": {
+      "size": 40,
+      "vw": 5.2,
+      "font": "Fira Code",
+      "text": "3+"
+     },
+     "monoShare": 1,
+     "monoProseShare": 1,
+     "monoFamilies": [
+      "Fira Code"
+     ],
+     "monoSamples": [
+      "Samay Joshi",
+      "Hi I'am",
+      "Samay",
+      "Web Developer_",
+      "{Full Stack}",
+      "I build real-world web apps with and — f"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.08,
+     "smallText": 4
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#fcfcfc",
+       "top": 2007,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.99
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#111111",
+       "share": 0.52
+      },
+      {
+       "color": "#6f6f6f",
+       "share": 0.38
+      },
+      {
+       "color": "#457dc5",
+       "share": 0.09
+      }
+     ],
+     "button": {
+      "bg": "#457dc5",
+      "hsl": {
+       "h": 214,
+       "s": 0.52,
+       "l": 0.52
+      },
+      "fg": "#111111"
+     },
+     "lowContrast": [
+      {
+       "text": "Software Development Engineer - 1",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 20,
+       "fg": "#457dc5",
+       "bg": "#fcfcfc"
+      },
+      {
+       "text": "Languages & Frameworks:",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 14.4,
+       "fg": "#457dc5",
+       "bg": "#fcfcfc"
+      },
+      {
+       "text": "Frontend & Backend:",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 14.4,
+       "fg": "#457dc5",
+       "bg": "#fcfcfc"
+      },
+      {
+       "text": "Database & Cloud:",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 14.4,
+       "fg": "#457dc5",
+       "bg": "#fcfcfc"
+      },
+      {
+       "text": "Dev Tools & CRM:",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 14.4,
+       "fg": "#457dc5",
+       "bg": "#fcfcfc"
+      },
+      {
+       "text": "Practices:",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 14.4,
+       "fg": "#457dc5",
+       "bg": "#fcfcfc"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 8,
+     "inHero": 1,
+     "radius": 6,
+     "height": 29,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 8,
+     "upper": 0,
+     "heroLabels": [
+      "Resume"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 21,
+     "boxRadius": 10,
+     "squareMedia": 0,
+     "roundedMedia": 2,
+     "mediaRadius": 10,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 8,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 1376
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 67,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "fira code",
+     "font awesome 6 brands",
+     "font awesome 6 free"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 5213,
+    "margins": {
+     "left": 18,
+     "right": 22
+    },
+    "sections": [
+     {
+      "sel": "section#intro",
+      "tag": "section",
+      "top": 0,
+      "height": 1024,
+      "words": 33,
+      "media": 1,
+      "middle": 32,
+      "heading": {
+       "text": "{Full Stack}",
+       "size": 36,
+       "tag": "h1"
+      },
+      "left": 88,
+      "right": 38,
+      "textLeft": 336,
+      "textRight": 38,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#experience",
+      "tag": "section",
+      "top": 1024,
+      "height": 951,
+      "words": 162,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "3+",
+       "size": 40,
+       "tag": "h1"
+      },
+      "left": 22,
+      "right": 24,
+      "textLeft": 22,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#education",
+      "tag": "section",
+      "top": 1999,
+      "height": 1012,
+      "words": 158,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "3+ Years of",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 26,
+      "right": 37,
+      "textLeft": 26,
+      "textRight": 37,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#projects",
+      "tag": "section",
+      "top": 3035,
+      "height": 1908,
+      "words": 275,
+      "media": 7,
+      "middle": 0,
+      "heading": {
+       "text": "Some of my recent projects",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 18,
+      "right": 18,
+      "textLeft": 18,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer#footer",
+      "tag": "footer",
+      "top": 4959,
+      "height": 254,
+      "words": 6,
+      "media": 0,
+      "middle": 155,
+      "heading": {
+       "text": "Samay Joshi",
+       "size": 34,
+       "tag": "h1"
+      },
+      "left": 12,
+      "right": 12,
+      "textLeft": 12,
+      "textRight": 12,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 672,
+      "height": 380
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Hi I'am Samay",
+      "size": 24,
+      "top": 351,
+      "firstScreen": true
+     },
+     {
+      "text": "{Full Stack} Web Developer_",
+      "size": 36,
+      "top": 380,
+      "firstScreen": true
+     },
+     {
+      "text": "3+",
+      "size": 40,
+      "top": 1058,
+      "firstScreen": false
+     },
+     {
+      "text": "3+",
+      "size": 40,
+      "top": 1058,
+      "firstScreen": false
+     },
+     {
+      "text": "8+",
+      "size": 40,
+      "top": 1058,
+      "firstScreen": false
+     },
+     {
+      "text": "2+",
+      "size": 40,
+      "top": 1058,
+      "firstScreen": false
+     },
+     {
+      "text": "Samay Joshi",
+      "size": 34,
+      "top": 5007,
+      "firstScreen": false
+     }
+    ],
+    "edgeText": [
+     {
+      "text": "About",
+      "side": "left",
+      "px": 12
+     },
+     {
+      "text": "Experience",
+      "side": "right",
+      "px": 12
+     }
+    ],
+    "edges": [
+     {
+      "x": 18,
+      "n": 11
+     },
+     {
+      "x": 200,
+      "n": 3
+     },
+     {
+      "x": 336,
+      "n": 3
+     },
+     {
+      "x": 274,
+      "n": 2
+     },
+     {
+      "x": 388,
+      "n": 2
+     },
+     {
+      "x": 530,
+      "n": 2
+     },
+     {
+      "x": 108,
+      "n": 1
+     },
+     {
+      "x": 451,
+      "n": 1
+     },
+     {
+      "x": 571,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 26,
+    "bodySize": 14,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 10,
+   "filled": [
+    0.41,
+    0.69,
+    0.76,
+    0.92,
+    0.52,
+    0.75,
+    0.99,
+    0.93,
+    1,
+    0.76
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 8058,
+     "screens": 9.5,
+     "words": 597,
+     "img": 37,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 8,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "author.jpg",
+      "1.png",
+      "1.png",
+      "1.jpg",
+      "no-img.jpg",
+      "no-img.jpg",
+      "no-img.jpg",
+      "1.png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "{Full Stack} Web Developer_",
+     "words": 4,
+     "chars": 27,
+     "lines": 2,
+     "size": 28,
+     "vw": 7.2,
+     "font": "Fira Code",
+     "weight": 500,
+     "tracking": 0,
+     "leading": 1.2,
+     "upper": false,
+     "italic": false,
+     "mono": true,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 432,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Hi I'am Samay",
+     "words": 3,
+     "lines": 1,
+     "size": 20,
+     "font": "Fira Code"
+    },
+    "headings": [
+     {
+      "text": "Samay Joshi",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 24.7,
+      "vw": 6.3,
+      "font": "Fira Code",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.52,
+      "top": 19,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "{Full Stack} Web Developer_",
+      "words": 4,
+      "chars": 27,
+      "lines": 2,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Fira Code",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 432,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "3+",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Fira Code",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 886,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "3+",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Fira Code",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.43,
+      "top": 886,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "8+",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Fira Code",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 1046,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "2+",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Fira Code",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.43,
+      "top": 1046,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Samay Joshi",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 27.9,
+      "vw": 7.2,
+      "font": "Fira Code",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.58,
+      "top": 7859,
+      "tag": "h1",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Fira Code",
+       "share": 1,
+       "mono": true
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      11,
+      13,
+      14,
+      16,
+      18,
+      19,
+      20,
+      25,
+      28,
+      40
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "Fira Code",
+      "size": 14.4,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 4.9
+     },
+     "measureChars": 49,
+     "max": {
+      "size": 40,
+      "vw": 10.3,
+      "font": "Fira Code",
+      "text": "3+"
+     },
+     "monoShare": 1,
+     "monoProseShare": 1,
+     "monoFamilies": [
+      "Fira Code"
+     ],
+     "monoSamples": [
+      "Samay Joshi",
+      "Hi I'am",
+      "Samay",
+      "Web Developer_",
+      "{Full Stack}",
+      "I build real-world web apps with and — f"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.08,
+     "smallText": 4
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#fcfcfc",
+       "top": 844,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.99
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#111111",
+       "share": 0.52
+      },
+      {
+       "color": "#6f6f6f",
+       "share": 0.38
+      },
+      {
+       "color": "#457dc5",
+       "share": 0.09
+      }
+     ],
+     "button": {
+      "bg": "#457dc5",
+      "hsl": {
+       "h": 214,
+       "s": 0.52,
+       "l": 0.52
+      },
+      "fg": "#111111"
+     },
+     "lowContrast": [
+      {
+       "text": "Software Development Engineer - 1",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 20,
+       "fg": "#457dc5",
+       "bg": "#fcfcfc"
+      },
+      {
+       "text": "Languages & Frameworks:",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 14.4,
+       "fg": "#457dc5",
+       "bg": "#fcfcfc"
+      },
+      {
+       "text": "Frontend & Backend:",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 14.4,
+       "fg": "#457dc5",
+       "bg": "#fcfcfc"
+      },
+      {
+       "text": "Database & Cloud:",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 14.4,
+       "fg": "#457dc5",
+       "bg": "#fcfcfc"
+      },
+      {
+       "text": "Dev Tools & CRM:",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 14.4,
+       "fg": "#457dc5",
+       "bg": "#fcfcfc"
+      },
+      {
+       "text": "Practices:",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 14.4,
+       "fg": "#457dc5",
+       "bg": "#fcfcfc"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 8,
+     "inHero": 1,
+     "radius": 6,
+     "height": 29,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 8,
+     "upper": 0,
+     "heroLabels": [
+      "Resume"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 19,
+     "boxRadius": 10,
+     "squareMedia": 0,
+     "roundedMedia": 8,
+     "mediaRadius": 6,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.18
+     }
+    ],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 67,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "fira code",
+     "font awesome 6 brands",
+     "font awesome 6 free"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 8058,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "section#intro",
+      "tag": "section",
+      "top": 0,
+      "height": 844,
+      "words": 33,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "{Full Stack}",
+       "size": 28,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 19,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#experience",
+      "tag": "section",
+      "top": 844,
+      "height": 1645,
+      "words": 162,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "3+",
+       "size": 40,
+       "tag": "h1"
+      },
+      "left": 22,
+      "right": 22,
+      "textLeft": 22,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#education",
+      "tag": "section",
+      "top": 2513,
+      "height": 1510,
+      "words": 158,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "3+ Years of",
+       "size": 19,
+       "tag": "h2"
+      },
+      "left": 26,
+      "right": 13,
+      "textLeft": 26,
+      "textRight": 13,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#projects",
+      "tag": "section",
+      "top": 4048,
+      "height": 3747,
+      "words": 275,
+      "media": 7,
+      "middle": 0,
+      "heading": {
+       "text": "Some of my recent projects",
+       "size": 19,
+       "tag": "h2"
+      },
+      "left": 18,
+      "right": 18,
+      "textLeft": 18,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer#footer",
+      "tag": "footer",
+      "top": 7811,
+      "height": 247,
+      "words": 6,
+      "media": 0,
+      "middle": 29,
+      "heading": {
+       "text": "Samay Joshi",
+       "size": 28,
+       "tag": "h1"
+      },
+      "left": 12,
+      "right": 12,
+      "textLeft": 12,
+      "textRight": 12,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 4076,
+      "height": 256
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Hi I'am Samay",
+      "size": 20,
+      "top": 408,
+      "firstScreen": true
+     },
+     {
+      "text": "{Full Stack} Web Developer_",
+      "size": 28,
+      "top": 432,
+      "firstScreen": true
+     },
+     {
+      "text": "3+",
+      "size": 40,
+      "top": 886,
+      "firstScreen": false
+     },
+     {
+      "text": "3+",
+      "size": 40,
+      "top": 886,
+      "firstScreen": false
+     },
+     {
+      "text": "8+",
+      "size": 40,
+      "top": 1046,
+      "firstScreen": false
+     },
+     {
+      "text": "2+",
+      "size": 40,
+      "top": 1046,
+      "firstScreen": false
+     },
+     {
+      "text": "Samay Joshi",
+      "size": 28,
+      "top": 7859,
+      "firstScreen": false
+     }
+    ],
+    "edgeText": [
+     {
+      "text": "Internship at Spektra Systems for Full Stack Devel",
+      "side": "right",
+      "px": 13
+     },
+     {
+      "text": "Bachelor's of Science Degree in Mathematics, Physi",
+      "side": "right",
+      "px": 13
+     },
+     {
+      "text": "About",
+      "side": "left",
+      "px": 12
+     },
+     {
+      "text": "Experience",
+      "side": "right",
+      "px": 12
+     }
+    ],
+    "edges": [
+     {
+      "x": 16,
+      "n": 21
+     },
+     {
+      "x": 135,
+      "n": 2
+     },
+     {
+      "x": 199,
+      "n": 2
+     },
+     {
+      "x": 112,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 26,
+    "bodySize": 14,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "mono",
+   "width": 1440,
+   "message": "Monospace type outside code: Fira Code — e.g. \"Samay Joshi\", \"Home\", \"Contact me\", \"Experience\"",
+   "fix": "Set it in the text face. Monospace is for literal code inside <pre>/<code> only.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "contrast",
+   "width": 1440,
+   "message": "Low-contrast text: \"Software Development Engineer - 1\" 4.1:1 needs 4.5:1; \"Languages & Frameworks:\" 4.1:1 needs 4.5:1; \"Frontend & Backend:\" 4.1:1 needs 4.5:1; \"Database & Cloud:\" 4.1:1 needs 4.5:1",
+   "fix": "Darken or lighten the text colour.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "10 different font sizes (11, 13, 14, 16, 20, 28, 32, 40, 56, 64).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "grey-body",
+   "width": 1440,
+   "message": "The running text is a soft grey on its ground (4.9:1).",
+   "fix": "Set body copy in the full ink (7:1 or more). Keep the muted ink for secondary notes; pages read thin and unfinished when everything is grey.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "small-text",
+   "width": 1440,
+   "message": "4 text blocks under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "focal-point",
+   "width": 1440,
+   "message": "The first screen has no dominant element: the largest type is 56px (3.9vw) and no single picture holds a third of the viewport.",
+   "fix": "Make one thing lead: the headline at display size, or one large picture. A grid of many small pictures is not one thing; in blind tests jurors marked a first screen without a headline down every time. On the strongest studied sites the largest type has a median of 8.4vw."
+  },
+  {
+   "level": "WARN",
+   "id": "dev-server",
+   "width": 1440,
+   "message": "This page is served by a development server (Vite, webpack or Next in dev mode).",
+   "fix": "Run the last gate on the production build too (vite build && vite preview, next build && next start, or the built index.html): minifiers and bundlers change the CSS a visitor receives.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "many-h1",
+   "width": 1440,
+   "message": "7 h1 elements.",
+   "fix": "One h1 per page; section titles are h2.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "ragged-edges",
+   "width": 1440,
+   "message": "Left-aligned text starts at 12 different lines (730px, 90px, 78px, 244px, 408px, 525px, 576px); the three most used hold only 38% of it.",
+   "fix": "Pick two or three anchor lines from the grid and start every heading and paragraph on one of them."
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 0 element(s) moved while the page loaded and scrolled.",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  },
+  {
+   "level": "FAIL",
+   "id": "body-size",
+   "width": 768,
+   "message": "Body text is 14.4px (the size most of the running text is set in).",
+   "fix": "Body copy 16–20px. Map small sizes from blueprints onto your body step.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "small-title",
+   "width": 768,
+   "message": "The h1 is 24px (\"Hi I'am Samay\").",
+   "fix": "Set the title at display size, or make the large text of the first screen the h1.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "name-only-title",
+   "width": 768,
+   "message": "The h1 is a bare name (\"Hi I'am Samay\") and nothing else on the first screen says what this is.",
+   "fix": "Keep the name if it leads, and give the line under it (18px or more) the plain words: what it is, for whom, where or when. In the study of 97 Sites of the Day, first screens that named nothing lost usability and content points.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "edge-text",
+   "width": 768,
+   "message": "2 text block(s) sit within 16px of the screen edge: \"About\" (12px from the left); \"Experience\" (12px from the right)",
+   "fix": "Keep text inside the page margin (16–32px or more). Only display type deliberately bled past the edge may touch it."
+  },
+  {
+   "level": "WARN",
+   "id": "edge-text",
+   "width": 390,
+   "message": "4 text block(s) sit 12–15px from the phone's edge: \"Internship at Spektra Systems \" (13px); \"Bachelor's of Science Degree i\" (13px); \"About\" (12px)",
+   "fix": "The page margin is 16–20px on a phone; the header and the corner labels sit on it too."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/Users/samayjoshi/Desktop/AngularProjects/DevPortfolio-Samay/.taste-skill/before/desktop-fold.jpg",
+   "pages": [
+    "/Users/samayjoshi/Desktop/AngularProjects/DevPortfolio-Samay/.taste-skill/before/desktop-page-01.jpg",
+    "/Users/samayjoshi/Desktop/AngularProjects/DevPortfolio-Samay/.taste-skill/before/desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/Users/samayjoshi/Desktop/AngularProjects/DevPortfolio-Samay/.taste-skill/before/tablet-fold.jpg",
+   "pages": [
+    "/Users/samayjoshi/Desktop/AngularProjects/DevPortfolio-Samay/.taste-skill/before/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/Users/samayjoshi/Desktop/AngularProjects/DevPortfolio-Samay/.taste-skill/before/mobile-fold.jpg",
+   "pages": [
+    "/Users/samayjoshi/Desktop/AngularProjects/DevPortfolio-Samay/.taste-skill/before/mobile-page-01.jpg",
+    "/Users/samayjoshi/Desktop/AngularProjects/DevPortfolio-Samay/.taste-skill/before/mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

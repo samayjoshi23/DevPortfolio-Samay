@@ -1,0 +1,70 @@
+<section id="work" class="section" aria-labelledby="work-title">
+  <div class="wrap">
+    <div class="grid grid-cols-12 items-end gap-6">
+      <h2 id="work-title" class="title col-span-12 md:col-span-6" appReveal>Selected work</h2>
+      <p class="col-span-12 max-w-[52ch] md:col-span-6" [appReveal]="1">
+        Client products and personal builds, each shown with its real screens. Filter by the technology you care about, or open any project to page through every screen.
+      </p>
+    </div>
+
+    <div class="mt-10 flex flex-wrap gap-2" role="group" aria-label="Filter projects by technology" [appReveal]="2">
+      @for (filter of filters; track filter.name) {
+        <button type="button" class="chip" [attr.aria-pressed]="activeFilter() === filter.name" (click)="onFilterClick(filter.name)">
+          <span class="chip-icon" aria-hidden="true">
+            @if (filter.icon) {
+              <img [src]="filter.icon" alt="" width="22" height="22" />
+            } @else {
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5" /><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5" /><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5" /><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5" /></svg>
+            }
+          </span>
+          {{ filter.name }}
+          <span class="chip-count"><span class="sr-only">, </span>{{ filter.count }}<span class="sr-only"> projects</span></span>
+        </button>
+      }
+    </div>
+    <p class="sr-only" aria-live="polite">{{ status() }}</p>
+
+    <div class="mt-14 flex flex-col gap-[clamp(72px,9vw,140px)]">
+      @for (caseStudy of visibleCases(); track caseStudy.key; let i = $index) {
+        <app-case-study
+          appReveal
+          [caseStudy]="caseStudy"
+          [highlight]="highlight()"
+          [reversed]="i % 2 === 1"
+          [eager]="i === 0"
+          (openGallery)="onOpenGallery($event)" />
+      } @empty {
+        <p class="text-muted">No featured projects use {{ activeFilter() }} yet. See the list below.</p>
+      }
+    </div>
+
+    <div class="mt-[clamp(96px,10vw,160px)] grid grid-cols-12 gap-6">
+      <h3 class="subtitle col-span-12 lg:col-span-4" appReveal>Also built</h3>
+      @if (visibleSideProjects().length) {
+        <ul class="col-span-12 grid gap-3 sm:grid-cols-2 lg:col-span-8">
+          @for (project of visibleSideProjects(); track project.title; let i = $index) {
+            <li class="flex flex-col rounded-[var(--radius)] bg-surface p-6" [appReveal]="i">
+              <span class="text-sm font-medium text-accent">{{ project.state }}</span>
+              <strong class="block font-semibold">{{ project.title }}</strong>
+              <p class="mt-2 text-sm text-muted">{{ project.description }}</p>
+              <ul class="mt-4 flex flex-wrap gap-1.5" aria-label="Built with">
+                @for (tech of project.stack; track tech) {
+                  <li class="tag" [class.is-hit]="tech === highlight()">{{ tech }}</li>
+                }
+              </ul>
+              @if (project.repo) {
+                <a class="link mt-auto self-start pt-3 text-sm hover:text-accent" [href]="project.repo" target="_blank" rel="noopener noreferrer">
+                  View code →<span class="sr-only"> for {{ project.title }} on GitHub</span>
+                </a>
+              }
+            </li>
+          }
+        </ul>
+      } @else {
+        <p class="col-span-12 text-muted lg:col-span-8">No other projects use {{ activeFilter() }}.</p>
+      }
+    </div>
+  </div>
+</section>
+
+<app-gallery-viewer />

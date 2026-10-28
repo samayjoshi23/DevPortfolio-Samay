@@ -1,0 +1,20 @@
+<section id="contact" class="mt-[var(--section-gap)] bg-accent text-accent-ink transition-colors" aria-labelledby="contact-title">
+  <div class="wrap grid min-h-[86svh] grid-rows-[auto_auto_1fr_auto] gap-6 pt-[clamp(48px,7vw,96px)] pb-10">
+    <h2 id="contact-title" class="title" appReveal>Have a project in mind?</h2>
+    <p class="max-w-[44ch] text-[length:var(--step-lead)] leading-snug" [appReveal]="1">
+      Tell me what it should do and when you need it. I usually reply within a day.
+    </p>
+    <a
+      class="self-end justify-self-start text-[clamp(2rem,6.6vw,7.5rem)] leading-none font-semibold tracking-[-0.05em] no-underline transition-opacity hover:opacity-75 max-sm:text-[9.6vw]"
+      [href]="mailto"
+      [appReveal]="2">{{ emailUser }}<wbr />&#64;{{ emailDomain }}</a>
+    <div class="flex flex-wrap justify-between gap-x-8 gap-y-4 text-sm font-medium">
+      <p class="flex items-center">{{ profile.location }} · open to remote work</p>
+      <ul class="flex flex-wrap gap-x-7">
+        @for (link of socialLinks; track link.url) {
+          <li><a class="link" [href]="link.url" target="_blank" rel="noopener noreferrer">{{ link.label }}</a></li>
+        }
+      </ul>
+    </div>
+  </div>
+</section>

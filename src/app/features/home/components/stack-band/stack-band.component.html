@@ -1,0 +1,12 @@
+<div class="band mt-[clamp(48px,7vw,96px)] overflow-hidden py-2" role="region" aria-label="Technologies I work with">
+  <ul class="marquee flex w-max gap-4">
+    @for (copy of [0, 1]; track copy) {
+      @for (tech of technologies; track tech.name) {
+        <li class="flex items-center gap-3 rounded-full bg-surface py-3 pr-5 pl-3 text-sm font-medium whitespace-nowrap" [attr.aria-hidden]="copy === 1 ? 'true' : null">
+          <img class="h-9 w-9 rounded-full bg-tile object-contain p-[5px]" [src]="tech.logo" width="36" height="36" alt="" loading="lazy" />
+          {{ tech.name }}
+        </li>
+      }
+    }
+  </ul>
+</div>

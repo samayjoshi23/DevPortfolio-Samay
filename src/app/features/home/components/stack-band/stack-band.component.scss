@@ -1,0 +1,19 @@
+.marquee {
+  animation: marquee 40s linear infinite;
+}
+
+.band:hover .marquee {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(calc(-50% - 8px));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .band {
+    overflow-x: auto;
+  }
+}

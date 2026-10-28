@@ -1,28 +1,6 @@
-<nav class="nav">
-  <app-navbar style="width: 100%;"></app-navbar>
-</nav>
-
-<main id="main-container">
-  <div id="app-container" class="container-lg">
-    <!-- Main body -->
-    <main>
-      <section id="intro">
-        <app-intro></app-intro>
-      </section>
-      <section id="experience">
-        <app-experience></app-experience>
-      </section>
-      <section id="education">
-        <app-education></app-education>
-      </section>
-      <section id="projects">
-        <app-projects></app-projects>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer id="footer">
-      <app-footer></app-footer>
-    </footer>
-  </div>
+<a href="#main" class="fixed -top-16 left-[var(--margin)] z-50 rounded-full bg-accent px-4 py-2.5 text-accent-ink focus:top-3">Skip to content</a>
+<app-navbar />
+<main id="main">
+  <router-outlet />
 </main>
+<app-footer />

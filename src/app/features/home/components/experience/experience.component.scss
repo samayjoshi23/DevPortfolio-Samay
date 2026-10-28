@@ -1,0 +1,275 @@
+// ---------- Work timeline ----------
+.timeline {
+  position: relative;
+  padding-left: 44px;
+}
+
+.rail {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  bottom: 10px;
+  width: 3px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  overflow: hidden;
+}
+
+.rail-fill {
+  position: absolute;
+  inset: 0;
+  background: var(--accent);
+  transform-origin: top;
+}
+
+// The rail fills as the timeline scrolls past; browsers without scroll timelines show it full.
+@supports (animation-timeline: view()) {
+  .rail-fill {
+    animation: rail-grow linear both;
+    animation-timeline: view();
+    animation-range: cover 10% cover 75%;
+  }
+}
+
+.group {
+  position: relative;
+}
+
+.node {
+  position: absolute;
+  left: -43px;
+  top: 4px;
+  width: 21px;
+  height: 21px;
+  border-radius: 999px;
+  border: 3px solid var(--surface-2);
+  background: var(--bg);
+  transform: scale(0.7);
+  transition: transform 500ms var(--ease-out) 150ms, background-color 300ms var(--ease-out) 150ms, border-color 300ms var(--ease-out) 150ms;
+}
+
+.group.is-in .node {
+  transform: scale(1);
+  border-color: var(--accent);
+  background: var(--accent);
+}
+
+// A soft ring that breathes around the current company.
+.node.is-current::after {
+  content: '';
+  position: absolute;
+  inset: -7px;
+  border-radius: 999px;
+  border: 2px solid var(--accent);
+  opacity: 0;
+  animation: ring 2.4s var(--ease-out) infinite 900ms;
+}
+
+.role {
+  padding: 22px 24px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  // Keeps the scroll entrance (opacity/transform) and adds a quick hover lift on `translate`.
+  transition:
+    opacity 600ms var(--ease-out) calc(var(--i, 0) * 75ms),
+    transform 600ms var(--ease-out) calc(var(--i, 0) * 75ms),
+    translate 220ms var(--ease-out),
+    background-color 220ms var(--ease-out);
+
+  &:hover {
+    translate: 0 -2px;
+    background: color-mix(in srgb, var(--surface) 60%, var(--surface-2));
+  }
+}
+
+.now-badge,
+.note-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: var(--step-small);
+  font-weight: 500;
+}
+
+.now-badge {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.note-badge {
+  background: var(--surface-2);
+}
+
+.now-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: currentColor;
+  animation: blink 1.6s ease-in-out infinite;
+}
+
+// Bullet points arrive one after another once their card is in view.
+:host-context(.js) .points li,
+:host-context(.js) .tool-chip {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 420ms var(--ease-out), transform 420ms var(--ease-out);
+  transition-delay: calc(var(--n, 0) * 60ms + 180ms);
+}
+
+:host-context(.js) .role.is-in .points li,
+:host-context(.js) .tool-group.is-in .tool-chip {
+  opacity: 1;
+  transform: none;
+}
+
+:host-context(.js) .tool-chip {
+  transform: scale(0.9);
+  transition-delay: calc(var(--n, 0) * 40ms + 120ms);
+}
+
+// ---------- Education journey ----------
+.journey {
+  position: relative;
+}
+
+.journey-list {
+  display: grid;
+  gap: 40px 24px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.journey-line {
+  position: absolute;
+  top: 26px;
+  left: 26px;
+  right: 0;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--accent);
+  transform-origin: left;
+}
+
+.stop {
+  position: relative;
+  transition: translate 220ms var(--ease-out);
+
+  &:hover {
+    translate: 0 -4px;
+  }
+
+  &:hover .stop-icon {
+    rotate: -8deg;
+    scale: 1.06;
+  }
+}
+
+.stop-icon {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 999px;
+  border: 5px solid var(--bg);
+  background: var(--accent);
+  color: var(--accent-ink);
+  transition: rotate 260ms var(--ease-out), scale 260ms var(--ease-out);
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+:host-context(.js) .journey {
+  .journey-line {
+    transform: scaleX(0);
+    transition: transform 1100ms var(--ease-out) 200ms;
+  }
+
+  .stop {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 500ms var(--ease-out), transform 500ms var(--ease-out), translate 220ms var(--ease-out);
+    transition-delay: calc(var(--n, 0) * 180ms + 250ms);
+  }
+
+  .stop-icon {
+    transform: scale(0.4);
+    transition: transform 500ms cubic-bezier(0.34, 1.56, 0.64, 1), rotate 260ms var(--ease-out), scale 260ms var(--ease-out);
+    transition-delay: calc(var(--n, 0) * 180ms + 300ms);
+  }
+
+  &.is-in {
+    .journey-line {
+      transform: none;
+    }
+
+    .stop,
+    .stop-icon {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+@keyframes rail-grow {
+  from {
+    transform: scaleY(0);
+  }
+}
+
+@keyframes ring {
+  0% {
+    opacity: 0.7;
+    transform: scale(0.8);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.35;
+  }
+}
+
+@media (max-width: 1023px) {
+  .journey-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .journey-line {
+    display: none;
+  }
+}
+
+@media (max-width: 639px) {
+  .timeline {
+    padding-left: 32px;
+  }
+
+  .rail {
+    left: 7px;
+  }
+
+  .node {
+    left: -33px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .role {
+    padding: 18px;
+  }
+
+  .journey-list {
+    grid-template-columns: 1fr;
+  }
+}
